@@ -1,0 +1,56 @@
+---
+import Icon from "../components/utils/Icon.astro";
+import SlpitText from "../components/utils/SlpitText.astro";
+---
+
+<header class="flex items-center justify-between py-4">
+  <div>
+    <span class="font-roboto text-2xl font-semibold text-cyan-400"
+      >VILLEGAS<span class="text-amber-500">3D</span></span
+    >
+  </div>
+  <nav>
+    <ul class="flex items-center gap-12 text-lg">
+      <li>
+        <a href="#inicio"><SlpitText>Inicio</SlpitText></a>
+      </li>
+      <li>
+        <a href="#servicios"><SlpitText>Servicios</SlpitText></a>
+      </li>
+      <li>
+        <a href="#sobre"><SlpitText>Sobre Mi</SlpitText></a>
+      </li>
+      <li>
+        <a href="#contacto"><SlpitText>Contacto</SlpitText></a>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <ul class="flex items-center gap-6 text-lg">
+      <li>
+        <Icon
+          href="https://www.instagram.com/villegas.arts/"
+          src="public/svg/instagram.svg"
+          alt="Enlace al Instagram de Juan Villegas"
+          width={35}
+        />
+      </li>
+      <li>
+        <Icon
+          href="https://github.com/numonu"
+          src="public/svg/github.svg"
+          alt="Enlace al GitHub de Juan Villegas"
+          width={32}
+        />
+      </li>
+      <li>
+        <Icon
+          href="https://www.linkedin.com/in/juan-villegas-dev/"
+          src="public/svg/linkedin.svg"
+          alt="Enlace al Linkedin de Juan Villegas"
+          width={40}
+        />
+      </li>
+    </ul>
+  </div>
+</header>
