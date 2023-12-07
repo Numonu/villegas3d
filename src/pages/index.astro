@@ -1,16 +1,33 @@
 ---
+import '@fontsource-variable/roboto-slab';
+import "@fontsource/poppins";
 
+import Hero from "../layout/Hero.astro";
+import PageHeader from "../layout/PageHeader.astro";
+import Wrapper from "../components/utils/Wrapper.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Artista 3D Freelance - Villegas 3D</title>
+    <style is:global>
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #262626;
+      }
+      img{
+        font-size: .6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <Wrapper>
+      <PageHeader />
+      <Hero />
+    </Wrapper>
+  </body>
 </html>
