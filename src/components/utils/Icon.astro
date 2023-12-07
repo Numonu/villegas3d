@@ -1,0 +1,19 @@
+---
+interface Props {
+  href?: string;
+  target?: string;
+  src: string;
+  alt: string;
+  width: number;
+}
+const { src, alt, width, href = "#", target = "_blank" } = Astro.props;
+---
+
+<a
+  target={target}
+  href={href}
+  class="inline-block cursor-pointer"
+  style=`width: ${width / 16}rem;`
+>
+  <img class="aspect-square" src={src} alt={alt} />
+</a>
