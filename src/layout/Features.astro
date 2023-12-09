@@ -3,24 +3,26 @@ import FeatCard from "../components/utils/FeatCard.astro";
 import Icon from "../components/utils/Icon.astro";
 ---
 
-<section class="mb-36 flex flex-wrap justify-center gap-16 lg:justify-between">
-  <FeatCard
-    title="Resultados Visualmente Impactantes"
-    description="Transformo tus ideas en imagenes 3D que cautivan y destacan, generando un impacto impecable"
-  >
-    <Icon src="/svg/hd.svg" alt="quality icon" width={50} />
-  </FeatCard>
-  <FeatCard
-    title="Inversion Duradera de tu Marca"
-    description="Una inversion en diseño 3D que eleva tu marca y perdura en la mente de tus clientes a lo largo del tiempo"
-  >
-    <Icon src="/svg/sold.svg" alt="sold icon" width={50} />
-  </FeatCard>
+<section class="mb-36">
+  <ul class="flex flex-wrap justify-center gap-16 lg:justify-between">
+    <FeatCard
+      title="Resultados Visualmente Impactantes"
+      description="Transformo tus ideas en imagenes 3D que cautivan y destacan, generando un impacto impecable"
+    >
+      <Icon src="/svg/hd.svg" alt="quality icon" width={50} />
+    </FeatCard>
+    <FeatCard
+      title="Inversion Duradera de tu Marca"
+      description="Una inversion en diseño 3D que eleva tu marca y perdura en la mente de tus clientes a lo largo del tiempo"
+    >
+      <Icon src="/svg/sold.svg" alt="sold icon" width={50} />
+    </FeatCard>
 
-  <FeatCard
-    title="Comprommiso Constante"
-    description="Siempre comprometido contigo, sin importar el proyecto ni su complejidad"
-  >
-    <Icon src="/svg/handshake.svg" alt="handshake icon" width={50} />
-  </FeatCard>
+    <FeatCard
+      title="Comprommiso Constante"
+      description="Siempre comprometido contigo, sin importar el proyecto ni su complejidad"
+    >
+      <Icon src="/svg/handshake.svg" alt="handshake icon" width={50} />
+    </FeatCard>
+  </ul>
 </section>
