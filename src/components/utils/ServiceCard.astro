@@ -6,7 +6,7 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<article class="rounded-md border border-purple-400 p-4">
+<li class="rounded-md border border-purple-400 p-4">
   <div class="mb-6">
     <slot />
   </div>
@@ -16,4 +16,4 @@ const { title, description } = Astro.props;
   <p class="text-sm text-neutral-600">
     {description}
   </p>
-</article>
+</li>
