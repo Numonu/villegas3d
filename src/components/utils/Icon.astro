@@ -1,19 +1,26 @@
 ---
 interface Props {
   href?: string;
-  target?: string;
   src: string;
   alt: string;
   width: number;
 }
-const { src, alt, width, href , target = "_blank" } = Astro.props;
+const { src, alt, width, href } = Astro.props;
 ---
 
-<a
-  target={target}
-  href={href}
-  class={`inline-block aspect-square cursor-pointer ${!href && "pointer-events-none"}`}
-  style=`width: ${width / 16}rem;`
->
-  <img src={src} alt={alt} />
-</a>
+{
+  href ? (
+    <a
+      target="_blank"
+      href={href}
+      class="inline-block aspect-square cursor-pointer"
+      style={`width: ${width / 16}rem;`}
+    >
+      <img src={src} alt={alt} />
+    </a>
+  ) : (
+    <span class="inline-block aspect-square" style={`width: ${width / 16}rem;`}>
+      <img src={src} alt={alt} />
+    </span>
+  )
+}
