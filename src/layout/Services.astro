@@ -3,21 +3,23 @@ import Icon from "../components/utils/Icon.astro";
 import ServiceCard from "../components/utils/ServiceCard.astro";
 ---
 
-<section class="mb-36 grid grid-cols-2 gap-12">
+<section class="mb-36 grid gap-12 lg:grid-cols-2">
   <div class="flex h-full items-center justify-center">
     <img
-      class="w-[85%]"
+      class="w-[85%] max-w-[450px] lg:max-w-none"
       src="images/rocket.webp"
       alt="ilustracion en 3D de una nave espacial"
     />
   </div>
-  <div class="flex flex-col justify-center">
+  <div
+    class="mx-auto flex max-w-[800px] flex-col justify-center lg:mx-0 lg:max-w-none"
+  >
     <header>
       <h2 class="mb-12 font-roboto text-4xl font-semibold text-cyan-400">
         Mis Servicios
       </h2>
     </header>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
       <ServiceCard
         title="Modelado 3D"
         description="Creación de modelos tridimensionales de objetos, personajes, arquitecturas, etc., utilizando software especializado como Blender"
