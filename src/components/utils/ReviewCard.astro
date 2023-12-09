@@ -1,0 +1,50 @@
+---
+import Icon from "./Icon.astro";
+import getNameResume from "../../utils/getNameResume";
+
+interface Props {
+  stars?: number;
+  src?: string;
+  username: string;
+  description: string;
+}
+const { src, username, description, stars = 5 } = Astro.props;
+---
+
+<div class="flex flex-col">
+  <header class="mb-4 flex justify-between">
+    <div class="flex items-center gap-2">
+      <div
+        class="flex aspect-square w-10 items-center justify-center overflow-hidden rounded-full bg-neutral-300"
+      >
+        {
+          src && (
+            <img
+              class="h-full w-full object-cover"
+              src={src}
+              alt={`foto de perfil de ${username}`}
+            />
+          )
+        }
+        {!src && getNameResume(username)}
+      </div>
+      <h3>{username}</h3>
+    </div>
+    <div class="flex items-center gap-1">
+      {
+        new Array(stars).fill(
+          <Icon alt="icono de una estrella" src="svg/star.svg" width={20} />,
+        )
+      }
+    </div>
+  </header>
+  <p class="mb-4 text-sm text-zinc-800">
+    {description}
+  </p>
+  <footer class="flex grow items-end">
+    <span class="flex items-center gap-2"
+      ><span class="text-xs text-zinc-600">from</span>
+      <Icon src="svg/upwork.svg" width={60} alt="logo de upwork" /></span
+    >
+  </footer>
+</div>
