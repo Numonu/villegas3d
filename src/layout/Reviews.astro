@@ -1,0 +1,31 @@
+---
+import ReviewCard from "../components/utils/ReviewCard.astro";
+---
+
+<section class="mb-36">
+  <h2
+    class="mb-4 text-center font-roboto text-4xl font-semibold text-amber-400"
+  >
+    Mis Clientes Satisfechos
+  </h2>
+  <p class="mx-auto mb-24 md:max-w-[80%] text-center">
+    Mi enfoque es brindar un servicio personalizado, atento y honesto para
+    satisfacer las necesidades individuales de cada cliente, garantizando una
+    experiencia positiva en cada interacción
+  </p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+    <ReviewCard
+      username="Shafeeq Khan"
+      description="Juan es increíblemente competente y versado en su campo. Además de tener excelentes aptitudes profesionales, es un caballero comprometido, una persona muy cooperativa y siempre dispuesto a echar una mano, ofrecer consejo y hacer excelentes recomendaciones para elevar el nivel del producto final"
+    />
+    <ReviewCard
+      username="Logal Law"
+      description="Juan entregó un excelente modelo de rifle de francotirador, totalmente texturizado con detalles intrincados. Presta una gran atención a los detalles y me encantaría volver a trabajar con él"
+      src="images/logan.webp"
+    />
+    <ReviewCard
+      username="Daniel Lannon"
+      description="Su habilidad para captar y materializar mis ideas en modelos 3D realistas fue asombrosa. La atención al detalle y la calidad de su trabajo son impecables. Además, cumplió con los plazos establecidos, lo cual fue fundamental para mi proyecto"
+    />
+  </div>
+</section>
