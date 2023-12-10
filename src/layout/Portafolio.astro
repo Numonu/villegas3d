@@ -1,0 +1,63 @@
+---
+import Icon from "../components/utils/Icon.astro";
+---
+
+<section class="mb-36 grid gap-4 lg:grid-cols-2">
+  <div>
+    <header
+      class="mb-6 flex flex-col items-center font-roboto font-semibold lg:items-start"
+    >
+      <h2 class="mb-2 text-4xl text-purple-400">Proyectos Recientes</h2>
+      <h3 class="text-xl text-cyan-400">Explora mi Mundo Creativo</h3>
+    </header>
+    <p class="mb-16 text-center lg:text-start">
+      Bienvenido a mi universo creativo! Aquí encontrarás una colección de
+      proyectos que reflejan mi pasión, dedicación y creatividad. Desde diseños
+      vibrantes hasta soluciones innovadoras, cada proyecto es el resultado de
+      mi compromiso con la excelencia y la expresión artística. ¡Explora y
+      déjate inspirar por mi trabajo
+    </p>
+    <ul class="flex items-center justify-center gap-2 lg:justify-start">
+      <li>
+        <Icon
+          href="https://www.instagram.com/villegas.arts/"
+          src="/svg/instagram.svg"
+          alt="enlace al Instagram de Juan Villegas"
+          width={40}
+        />
+      </li>
+      <li>
+        <Icon
+          href="https://stock.adobe.com/pe/contributor/211133747/villegasarts?load_type=author&prev_url=detail"
+          src="/svg/adobe.svg"
+          alt="enlace al Adobe Stock de Juan Villegas"
+          width={40}
+        />
+      </li>
+      <li>
+        <Icon
+          href="https://www.upwork.com/freelancers/~016aa13d2d22429ef5?s=1110580766784868352"
+          src="/svg/upwork_square.svg"
+          alt="enlace al Upwork de Juan Villegas"
+          width={35}
+        />
+      </li>
+    </ul>
+  </div>
+  <ul
+    class="grid grid-cols-3 gap-4 rounded-3xl [&>*]:overflow-hidden [&>*]:rounded-xl"
+  >
+    <li class="row-span-2">
+      <img class="h-full w-full object-cover" src="images/slime.webp" alt="" />
+    </li>
+    <li class="col-span-2">
+      <img class="h-full w-full object-cover" src="images/egg.webp" alt="" />
+    </li>
+    <li>
+      <video src="videos/bob.mp4" autoplay loop muted></video>
+    </li>
+    <li>
+      <video src="videos/shovel.mp4" autoplay loop muted></video>
+    </li>
+  </ul>
+</section>
