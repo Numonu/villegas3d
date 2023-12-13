@@ -1,15 +1,17 @@
 ---
-import '@fontsource-variable/roboto-slab';
+import "@fontsource-variable/roboto-slab";
 import "@fontsource/poppins";
 
 import Hero from "../layout/Hero.astro";
 import PageHeader from "../layout/PageHeader.astro";
 import Wrapper from "../components/utils/Wrapper.astro";
-import Services from '../layout/Services.astro';
-import Features from '../layout/Features.astro';
-import Reviews from '../layout/Reviews.astro';
-import Portafolio from '../layout/Portafolio.astro';
-import About from '../layout/About.astro';
+import Services from "../layout/Services.astro";
+import Features from "../layout/Features.astro";
+import Reviews from "../layout/Reviews.astro";
+import Portafolio from "../layout/Portafolio.astro";
+import About from "../layout/About.astro";
+import Contact from "../layout/Contact.astro";
+import PageFooter from "../layout/PageFooter.astro";
 ---
 
 <html lang="es">
@@ -24,8 +26,8 @@ import About from '../layout/About.astro';
         font-family: "Poppins", sans-serif;
         color: #262626;
       }
-      img{
-        font-size: .6rem;
+      img {
+        font-size: 0.6rem;
       }
     </style>
   </head>
@@ -33,11 +35,13 @@ import About from '../layout/About.astro';
     <Wrapper>
       <PageHeader />
       <Hero />
-      <Features/>
-      <Services/>
-      <Reviews/>
-      <Portafolio/>
-      <About/>
+      <Features />
+      <Services />
+      <Reviews />
+      <About />
+      <Portafolio />
+      <Contact />
     </Wrapper>
+    <PageFooter>
   </body>
 </html>
