@@ -1,0 +1,74 @@
+---
+import Icon from "../components/utils/Icon.astro";
+---
+
+<section
+  class="mx-auto grid max-w-[750px] gap-6 rounded-xl rounded-b-none border-4 border-b-0 border-dashed border-amber-400 p-12 lg:max-w-none lg:grid-cols-2"
+>
+  <div class="hidden lg:block">
+    <img src="images/icons.webp" alt="iconos en 3D de mis redes sociales" />
+  </div>
+  <div>
+    <div class="mx-auto mb-4 block max-w-[450px] lg:hidden">
+      <img src="images/icons.webp" alt="iconos en 3D de mis redes sociales" />
+    </div>
+    <header class="mb-6">
+      <h2 class="mb-2 font-roboto text-4xl font-semibold text-amber-400">
+        Contacta Conmigo!
+      </h2>
+      <p>
+        Puedes comunicarte conmigo enviándome un mensaje directo a través de la
+        red social que prefieras o utilizando el formulario que se encuentra a
+        continuación. 😎
+      </p>
+    </header>
+    <form action="https://formspree.io/f/xaygrgdb" method="post">
+      <input
+        required
+        type="email"
+        name="email"
+        class="mb-4 w-full rounded-lg border border-neutral-300 bg-neutral-100 p-2 outline-1 placeholder:text-neutral-500 focus:outline focus:outline-neutral-900"
+        placeholder="Tu Email"
+      />
+      <textarea
+        name="message"
+        required
+        class="mb-6 w-full resize-none rounded-lg border border-neutral-300 bg-neutral-100 p-2 outline-1 placeholder:text-neutral-500 focus:outline focus:outline-neutral-900"
+        placeholder="Tu Mensaje"
+        cols="30"
+        rows="10"></textarea>
+      <div class="flex items-center gap-2">
+        <button
+          type="submit"
+          class="rounded-lg bg-amber-400 p-3 px-6 transition-colors duration-150 hover:bg-amber-500"
+          >Enviar</button
+        >
+        <div class="mx-2 h-12 w-[1px] bg-neutral-200"></div>
+        <Icon
+          href="https://wa.me/511928959043/?text=Hola%uwu"
+          src="svg/whatsapp.svg"
+          alt="enviame un mensaje por whatsapp"
+          width={47}
+        />
+        <Icon
+          href="https://www.instagram.com/villegas.arts/"
+          src="svg/instagram.svg"
+          alt="enviame un mensaje por instagram"
+          width={52}
+        />
+        <Icon
+          href="https://twitter.com/numonudev"
+          src="svg/twitter.svg"
+          alt="enviame un mensaje por twitter"
+          width={44}
+        />
+        <Icon
+          href="https://www.linkedin.com/in/juan-villegas-dev/"
+          src="svg/linkedin.svg"
+          alt="enviame un mensaje por linkedin"
+          width={58}
+        />
+      </div>
+    </form>
+  </div>
+</section>
