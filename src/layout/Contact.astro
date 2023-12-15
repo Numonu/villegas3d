@@ -27,17 +27,17 @@ import Icon from "../components/utils/Icon.astro";
         required
         type="email"
         name="email"
-        class="mb-4 w-full rounded-lg border border-neutral-300 bg-neutral-100 p-2 outline-1 placeholder:text-neutral-500 focus:outline focus:outline-neutral-900"
+        class="mb-4 w-full min-w-0 rounded-lg border border-neutral-300 bg-neutral-100 p-2 outline-1 placeholder:text-neutral-500 focus:outline focus:outline-neutral-900"
         placeholder="Tu Email"
       />
       <textarea
         name="message"
         required
-        class="mb-6 w-full resize-none rounded-lg border border-neutral-300 bg-neutral-100 p-2 outline-1 placeholder:text-neutral-500 focus:outline focus:outline-neutral-900"
+        class="mb-6 w-full min-w-0 resize-none rounded-lg border border-neutral-300 bg-neutral-100 p-2 outline-1 placeholder:text-neutral-500 focus:outline focus:outline-neutral-900"
         placeholder="Tu Mensaje"
         cols="30"
         rows="10"></textarea>
-      <div class="flex items-center gap-2">
+      <div class="flex flex-wrap items-center gap-2">
         <button
           type="submit"
           class="rounded-lg bg-amber-400 p-3 px-6 transition-colors duration-150 hover:bg-amber-500"
