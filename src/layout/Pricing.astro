@@ -1,0 +1,46 @@
+---
+import Icon from "../components/utils/Icon.astro";
+import PlanCard from "../components/utils/PlanCard.astro";
+---
+
+<section class="relative isolate mb-36">
+  <header class="mb-36 text-center">
+    <h2 class="mb-6 font-roboto text-4xl font-semibold">Paquetes y Precios</h2>
+    <p class="mx-auto max-w-[70%] opacity-80">
+      Seleccione entre mis servicios comunes o solicite uno personalizado y
+      diseñado especialmente para usted en la sección de contacto
+    </p>
+  </header>
+  <div class="flex flex-wrap justify-center gap-16">
+    <PlanCard
+      message="¡Hola Juan! He echado un vistazo a tu portafolio y me han llamado mucho la atención tus servicios. Estoy interesado en adquirir el plan de 20 iconos en 3D con un precio de 20$."
+      color="#e18dff"
+      title="iconos 3D"
+      price={20}
+      subtitle="¡Descuento especial para clientes de la web!"
+      description="Paquete de 20 iconos en 3D, los cuales incluyen renders en alta calidad y los archivos fuente correspondientes"
+    >
+      <Icon alt="icono" src="svg/icons.svg" width={30} />
+    </PlanCard>
+    <PlanCard
+      message="¡Hola Juan! He echado un vistazo a tu portafolio y me han llamado mucho la atención tus servicios. Estoy interesado en adquirir el plan Diseño y Modelado de un Personaje en 3D con un precio de 25$."
+      color="orange"
+      title="Personaje 3D"
+      price={25}
+      subtitle="¡Descuento especial para clientes de la web!"
+      description="Diseño y Modelado de un personaje en 3D, con la entrega de renders en alta calidad y el archivo fuente adjunto"
+    >
+      <Icon alt="icono" src="svg/pacman.svg" width={30} />
+    </PlanCard>
+    <PlanCard
+      message="¡Hola Juan! He echado un vistazo a tu portafolio y me han llamado mucho la atención tus servicios. Estoy interesado en adquirir el plan de Animacion en 3D con un precio de 35$."
+      color="cyan"
+      title="Animacion 3D"
+      price={35}
+      subtitle="¡Descuento especial para clientes de la web!"
+      description="Creación de animaciones para escenas, personajes y diversos propósitos como streaming y marketing"
+    >
+      <Icon alt="icono" src="svg/animation.svg" width={30} />
+    </PlanCard>
+  </div>
+</section>
