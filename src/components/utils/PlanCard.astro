@@ -1,0 +1,66 @@
+---
+interface Props {
+  title: string;
+  price: number;
+  subtitle: string;
+  description: string;
+  color: string;
+  message : string;
+  available?: boolean;
+}
+const {
+  title,
+  price,
+  subtitle,
+  description,
+  color,
+  message,
+  available = true,
+} = Astro.props;
+---
+
+<article
+  class="flex max-w-[300px] flex-col items-center rounded-2xl border-2 border-b-4 p-2 text-center"
+  style=`border-color: ${color};`
+>
+  <div
+    class="flex w-[70%] -translate-y-12 flex-col items-center border gap-2 rounded-3xl p-4"
+    style=`background-color: ${color};`
+  >
+    <slot />
+    <h3 class="font-roboto text-lg font-semibold uppercase text-white">
+      {title}
+    </h3>
+  </div>
+  <div class="flex flex-col items-center gap-2 font-roboto">
+    <div class="flex items-start gap-2">
+      <span class="block opacity-80">
+        <del>
+          ${price + 10}
+        </del>
+      </span>
+      <span class="block text-5xl ">
+        ${price}
+      </span>
+    </div>
+    <p class="max-w-[80%] text-xs opacity-80">{subtitle}</p>
+  </div>
+  <hr class="my-4 h-1 w-full" />
+  <p class="mb-12 text-sm">{description}</p>
+  <footer class="flex grow flex-col justify-end">
+    <a
+      href=`https://wa.me/51928959043/?text=${message}`
+      class="mb-4 rounded-full px-3 py-2 font-roboto text-sm font-semibold uppercase text-white hover:scale-105 transition-transform"
+      style=`background-color: ${color};`>hacer pedido</a
+    >
+    <div class="text-xs">
+      {
+        available ? (
+          <span class="text-green-500">¡Plazas disponibles!</span>
+        ) : (
+          <span class="text-red-500">¡Plazas no disponibles!</span>
+        )
+      }
+    </div>
+  </footer>
+</article>
