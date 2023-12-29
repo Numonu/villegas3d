@@ -12,6 +12,7 @@ import Portafolio from "../layout/Portafolio.astro";
 import About from "../layout/About.astro";
 import Contact from "../layout/Contact.astro";
 import PageFooter from "../layout/PageFooter.astro";
+import Pricing from "../layout/Pricing.astro";
 ---
 
 <html lang="es">
@@ -20,15 +21,24 @@ import PageFooter from "../layout/PageFooter.astro";
     <link rel="icon" type="image/svg+xml" href="/svg/3d.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Descubre mis servicios freelance profesionales de renderizado y modelado 3D personalizado. Transformamos tus ideas en realidades visuales impresionantes. ¡Potencia tu proyecto con Villegas3D ahora!">
+    <meta
+      name="description"
+      content="Descubre mis servicios freelance profesionales de renderizado y modelado 3D personalizado. Transformamos tus ideas en realidades visuales impresionantes. ¡Potencia tu proyecto con Villegas3D ahora!"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Contrata Servicios de Render y Modelado 3D personalizado" />
-    <meta property="og:description" content="Descubre servicios freelance profesionales de renderizado y modelado 3D personalizado. Transformamos tus ideas en realidades visuales impresionantes. ¡Potencia tu proyecto con ahora!" />
+    <meta
+      property="og:title"
+      content="Contrata Servicios de Render y Modelado 3D personalizado"
+    />
+    <meta
+      property="og:description"
+      content="Descubre servicios freelance profesionales de renderizado y modelado 3D personalizado. Transformamos tus ideas en realidades visuales impresionantes. ¡Potencia tu proyecto con ahora!"
+    />
     <meta property="og:image" content="/images/screen.jpg" />
     <meta property="og:url" content="permalink" />
     <title>Servicios de Render y Modelado 3D personalizado - Villegas 3D</title>
     <style is:global>
-      html{
+      html {
         scroll-behavior: smooth;
       }
       body {
@@ -48,9 +58,10 @@ import PageFooter from "../layout/PageFooter.astro";
       <Services />
       <Reviews />
       <About />
+      <Pricing />
       <Portafolio />
       <Contact />
     </Wrapper>
-    <PageFooter>
+    <PageFooter />
   </body>
 </html>
